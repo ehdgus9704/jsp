@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>1_Servlet</display-name>
+  <welcome-file-list> <!-- 웹 애플리케이션 요청 시 자동으로 보여줄 파일 지정, root Context로만 접근해도 보여줄 파일 설정 -->
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>TestServlet1</servlet-name>					<!-- 배포명 -->
+  	<servlet-class>com.kh.servlet.TestServlet1</servlet-class>  <!-- 실제 servlet 클래스-->
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TestServlet1</servlet-name>					<!-- 배포명 -->
+  	<url-pattern>/testServlet1.do</url-pattern>					<!-- 클라이언트 요청 값 -->
+  </servlet-mapping>
+  
+  
+   <servlet>
+  	<servlet-name>TestServlet2</servlet-name>					<!-- 배포명 -->
+  	<servlet-class>com.kh.servlet.TestServlet2</servlet-class>  <!-- 실제 servlet 클래스-->
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TestServlet2</servlet-name>					<!-- 배포명 -->
+  	<url-pattern>/testServlet2.do</url-pattern>					<!-- 클라이언트 요청 값 -->
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>TestServlet3</servlet-name>					<!-- 배포명 -->
+  	<servlet-class>com.kh.servlet.TestServlet3</servlet-class>  <!-- 실제 servlet 클래스-->
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TestServlet3</servlet-name>					<!-- 배포명 -->
+  	<url-pattern>/testServlet3.do</url-pattern>					<!-- 클라이언트 요청 값 -->
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>TestServlet4</servlet-name>					<!-- 배포명 -->
+  	<servlet-class>com.kh.servlet.TestServlet4</servlet-class>  <!-- 실제 servlet 클래스-->
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TestServlet4</servlet-name>					<!-- 배포명 -->
+  	<url-pattern>/testServlet4.do</url-pattern>					<!-- 클라이언트 요청 값 -->
+  </servlet-mapping>
+</web-app>
