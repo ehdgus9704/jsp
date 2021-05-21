@@ -86,7 +86,7 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 	request.setAttribute("food", String.join(",", food));
 	request.setAttribute("recommendation", recommendation);
 	
-	RequestDispatcher view = request.getRequestDispatcher("servlet/testServlet4end.jsp");
+	RequestDispatcher view = request.getRequestDispatcher("servlet/testServlet4End.jsp");
 	view.forward(request, response);
 	// RequestDispatcher.forward(HttpServletRequest request, HttpServletRestonse response)
 	// : 지정한 view에 담은 데이터를 전송하는 메소드

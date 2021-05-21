@@ -35,6 +35,6 @@
 	좋아하는 음식은<span class='info' id='food'><%= food%></span>입니다.
 	<hr>
 	<h3><%= age%>에 맞는 선물 추천</h3>
-	 '<%= recommendation%>' 선물은 어떠신가요?
+	 '<%=recommendation %>' 선물은 어떠신가요?
 </body>
 </html>
